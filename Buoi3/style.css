@@ -29,3 +29,26 @@
 .t-box{
     display: flex;
 }
+.two-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.c-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+.c2-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.c3-box{
+    display: flex;
+}
+.c1{
+    display: flex;
+}
