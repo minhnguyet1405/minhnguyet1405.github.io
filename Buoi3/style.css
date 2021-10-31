@@ -1,0 +1,31 @@
+.container{
+    
+    width: 50%;
+    margin: 0 auto;
+    height: 70vh;
+    border: 5px solid orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.box{
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    /* margin: 1rem; */
+}
+.h-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.t-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.t-box{
+    display: flex;
+}
