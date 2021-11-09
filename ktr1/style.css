@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    display: block;
+    min-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.header-img{
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: pink;
+}
+.navbar a{
+    color: white;
+    font-weight: 600;
+
+}
+.main{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 1rem;
+}
+.content{
+    margin-top: 2rem;
+    border: 1px solid gray;
+
+}
+.h3{
+    background-color: pink;
+    padding: 1rem;
+}
+.list-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+.content-item{
+    width: 100%;
+    border: 1px solid gray;
+    color: blue;
+    padding: 0.5rem;
+}
+.content-img{
+    width: 100%;
+    height: 200px;
+
+}
+.video{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr;
+    
+}
+.video-img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border: 1px solid gray;
+}
+.search{
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    
+   
+}
+.danhMuc,.gia{
+    background-color: pink;
+    padding: 0.5rem;
+}
+.timkiem{
+    background-color: pink;
+    width: 100%;
+    padding: 0.5rem;
+    
+}
+.connect{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr;
+}
+.connect h4{
+    background-color: pink;
+    padding: 0.5rem;
+    text-align: center;
+}
+.gioHang{
+    border: 1px solid palevioletred;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.gioHang p{
+    color: pink;
+}
+.phone{
+    text-align: center;
+}
+.top{
+    display: flex;
+    width: 100%;
+}
+.top img{
+    width: 30%;
+    height: 50px;
+    object-fit: cover;
+}
+
+
+

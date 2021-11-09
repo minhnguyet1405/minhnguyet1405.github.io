@@ -5,8 +5,7 @@
 }
 .container{
     width:100%;
-    /* display: inline-block; */
-    
+    min-height: 100vh;
     margin: 0 auto;
     background-color: #4B4C4E;
     
@@ -53,6 +52,7 @@ p{
 }
 .sixteen,.image {
     border: none;
+    padding: 0px;
 }
 .list{
     position: relative;
