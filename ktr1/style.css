@@ -101,6 +101,8 @@ ul{
     margin-top: 2rem;
     display: grid;
     grid-template-rows: 1fr 1fr 2fr;
+    gap: 0.75rem;
+    
 }
 .connect h4{
     background-color: pink;
@@ -112,22 +114,45 @@ ul{
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
+    
 }
 .gioHang p{
     color: pink;
+    margin-top: 1rem;
 }
 .phone{
+    border: 1px solid palevioletred;
     text-align: center;
+    /* display: flex;
+    flex-direction: column; */
+
+}
+.phone p{
+    margin-top: 2rem;
+}
+.new{
+    border: 1px solid palevioletred;
 }
 .top{
+    
     display: flex;
-    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+
+}
+.ig{
+    width: 30%;
 }
 .top img{
-    width: 30%;
-    height: 50px;
-    object-fit: cover;
+    width: 100%;
+    
+}
+.p{
+    width: 60%;
+    flex: 1;
 }
 
 
