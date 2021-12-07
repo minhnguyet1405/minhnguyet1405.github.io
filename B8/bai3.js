@@ -10,7 +10,7 @@
 //     isLive: true
 //    }
 // console.log(post)
-function post(title,body,author,views,comments,isLive){
+function Post(title,body,author,views,comments,isLive){
     this.title=title;
     this.body=body;
     this.author=author;
@@ -19,5 +19,5 @@ function post(title,body,author,views,comments,isLive){
     this.isLive=isLive;
 }
 // const Comment=new comments()
-const Post = new post('ahihi','anh Hoang dzzz','abc',100,[{author: 'anh huan dzzz', body: 'lewlew'},{author:'anh huan dzzz',body: 'lewlew'}],true)
-console.log(Post)
+const post = new Post('ahihi','anh Hoang dzzz','abc',100,[{author: 'anh huan dzzz', body: 'lewlew'},{author:'anh huan dzzz',body: 'lewlew'}],true)
+console.log(post)
