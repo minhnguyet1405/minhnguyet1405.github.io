@@ -1,0 +1,11 @@
+@import url(base.css);
+.container-tutorial{
+    width: 80%;
+    margin: 0 auto;
+}
+.container-tutorial p:first-child{
+    margin-bottom: 60px;
+}
+.container-tutorial p:not(:first-child){
+    margin-bottom: 30px;
+}

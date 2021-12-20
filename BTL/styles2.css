@@ -1,0 +1,73 @@
+@import url(base.css);
+.container-faq{
+    width: 80%;
+    margin:0 auto;
+
+}
+.container-faq h3{
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #1c1c1c;
+    margin-bottom: 25px;
+}
+
+.title{
+    font-size: 16px;
+    color: inherit;
+    letter-spacing: 1px;
+    background-color: #ebebeb;
+}
+.title div{
+    display: block;
+    color: #1c1c1c;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    padding: 10px;
+    
+}
+.blog-item{
+    margin-bottom: 10px;
+    position: relative;
+    transition: all 0.25s ease-out;
+}
+/* .title:hover{
+    background-color: #916841;
+} */
+/* .title a:hover{
+    color: white;
+} */
+.item-menu {
+    padding: 10px;
+    border-bottom: 1px solid #ebebeb;
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+}
+.menu p{
+    /* margin-bottom: 15px; */
+    letter-spacing: 0.5px;
+}
+.item-title{
+    /* position: relative; */
+
+}
+.item-menu{
+    /* position: absolute; */
+    width: 100%;
+    display: none;    
+}
+/* .blog-item:hover .item-menu{
+    display: block;
+} */
+
+.selected .title{
+    background-color: #916841;
+}
+
+.selected .title div {
+    color: white;
+}
+
+.selected .item-menu {
+    display: block;    
+}

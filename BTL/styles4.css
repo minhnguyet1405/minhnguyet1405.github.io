@@ -1,0 +1,12 @@
+@import url(base.css);
+body{
+    letter-spacing: 0.5px;
+}
+.container-transport{
+    width: 80%;
+    margin: 0 auto;
+
+}
+p{
+    margin-bottom: 15px;
+}

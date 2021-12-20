@@ -1,0 +1,56 @@
+@import url(base.css);
+.container-map{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 1rem;
+    letter-spacing: 1px;
+}
+.lables{
+    width: 30%;
+}
+.map{
+    width: 70%;
+}
+.map iframe{
+    width: 100%;
+    height: 500px;
+}
+.lables>p{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    color: #1c1c1c;
+}
+.address{
+    margin-top: 10px;
+    border: 1px solid #e5e5e5;
+    padding: 5px;
+    height: 397px;
+    overflow-y: scroll;
+}
+
+.item{
+    display: flex;
+    gap: 16px;
+    font-size: 13px;
+    
+}
+.district{
+    text-transform: uppercase;
+    color: #1c1c1c;
+    font-weight: 600;
+    margin-bottom: 5px;
+    
+}
+.item:hover{
+    background-color: #916841;
+    cursor: pointer;
+    color: white;
+}
+.item i{
+    width: 15px ;
+}
+
+

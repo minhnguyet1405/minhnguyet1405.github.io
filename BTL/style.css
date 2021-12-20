@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 1.7;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    letter-spacing: 0.25px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+p{
+    font-size: 14px;
+}
+.section-1 img{
+    width: 100%;
+    max-height:700px;
+    object-fit: cover;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.section-2{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 40px 0;
+    color: #333;
+    font-size: 14px;
+}
+.list_item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.item-img img{
+    width: 100%;
+    
+}
+.item-text{
+    line-height: 20px;
+}
+.branch{
+    color: black;
+    font-weight: 530;
+}
+/* .connect p{
+    padding: 0.75rem;
+    border: 1px solid black;
+    width: 260px;
+    color: white;
+    background-color: #333;
+    font-size: 14px;
+} */
+.item-1{
+    position: relative;
+}
+.item-img{
+    margin-bottom: 25px;
+}
+.discount p{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.25rem 0.75rem;
+    background-color: #916841;
+    font-size: 12px;
+    color: white;
+}
+
+.list_item-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+.item-2{
+    position: relative;
+    overflow: hidden;
+}
+.item-2 img{
+    /* transform: scale(1.25); */
+    transition: 0.5s ease-in-out;
+    width: 100%;
+}
+.item-2:hover img{
+    transform: scale(1.25);
+}
+.item_2-img img{
+    width: 100%;
+}
+.title{
+    font-size: 25px;
+    
+}
+.connect-2 {
+    width: 140px;
+    height: 45px ;
+    background: white;
+    border:1px solid rgba(170, 169, 169, 0.5);
+    box-shadow: inset 0 0 0 0 #888888;
+    transition: ease-out 0.5s;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+.connect-2:hover{
+    /* background: transparent; */
+    box-shadow: inset 140px 0 0 0 transpar#888888ent;
+    color: white;
+    
+}
+/* .item_2-text a p{
+    padding: 0.75rem 0;
+    text-align: center;
+    background-color: white;
+    font-size: 14px;
+
+    width: 143px;
+    border: 1px solid rgba(170, 169, 169, 0.5);
+    color: #363636;
+    margin-top: 12px;
+} */
+.item_2-text{
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+}
+.section-2_3{
+    margin-top: 40px;
+}
+.section-2_4{
+    margin-top: 80px;
+    
+}
+.section-4{
+    background: url(https://bizweb.dktcdn.net/100/355/487/themes/720328/assets/ant_product_bg.jpg?1629466801879) no-repeat center bottom;
+    background-size: cover;
+    padding-bottom: 25px;
+   
+}
+.content{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0 0;
+}
+.list_item-3{
+    display: flex;
+    align-items: center;
+    gap: 75px;
+
+}
+.item-3 img{
+    width: 100%;
+}
+
+.pic2{
+    width: 35%;
+}
+.container_section-5{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    
+}
+.list_item-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.item-4{
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+    transform: scale(1);
+}
+.item_4-img{
+    width: 100%;
+    overflow: hidden;
+    /* transform: scale(1); */
+}
+.item_4-img img{
+    width: 100%;
+    /* overflow: hidden; */
+     
+}
+.container_section-5 > p{
+    font-size: 25px;
+    text-align: center;
+    
+
+}
+
+.item_4-img:hover{
+    transform: scale(1.2);
+}
+.connect{
+   
+    width: 250px;
+    height: 50px;
+    background: #333;
+    color: white;
+    border: 1px solid #333;
+    box-shadow: inset 0 0 0 0 white;
+    transition: ease-out 0.5s;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    
+
+
+}
+.connect:hover{
+    box-shadow: inset 250px 0 0 0 white;
+    color:#333;
+}
+.connect-5{
+    width: 150px;
+
+}
+.item-4 h3:hover{
+    color: #916841;
+}
+.
