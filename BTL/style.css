@@ -51,19 +51,22 @@ p{
     color: black;
     font-weight: 530;
 }
-/* .connect p{
-    padding: 0.75rem;
-    border: 1px solid black;
-    width: 260px;
-    color: white;
-    background-color: #333;
-    font-size: 14px;
-} */
+
 .item-1{
     position: relative;
 }
 .item-img{
     margin-bottom: 25px;
+    position: relative;
+}
+.transition-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.item:hover .transition-image{
+    opacity: 1;
 }
 .discount p{
     position: absolute;
@@ -74,7 +77,31 @@ p{
     font-size: 12px;
     color: white;
 }
+.item{
+    position: relative;
+}
+.add p{
+    padding: 0.5rem;
+    color: white;
+}
+.add{
+    border: 1px solid #333;
 
+    height: 45px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    background-color: #333;
+    color: white;
+}
+.add:hover{
+    opacity: 1;
+    color:white;
+
+    
+}
 .list_item-2{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -88,6 +115,7 @@ p{
     /* transform: scale(1.25); */
     transition: 0.5s ease-in-out;
     width: 100%;
+    display: block;
 }
 .item-2:hover img{
     transform: scale(1.25);
@@ -102,32 +130,26 @@ p{
 .connect-2 {
     width: 140px;
     height: 45px ;
-    background: white;
+    background: transparent;
     border:1px solid rgba(170, 169, 169, 0.5);
-    box-shadow: inset 0 0 0 0 #888888;
+    box-shadow: inset -140px 0 0 0 white;
     transition: ease-out 0.5s;
     outline: none;
     cursor: pointer;
-    border-radius: 4px;
+    
 
 }
 .connect-2:hover{
-    /* background: transparent; */
-    box-shadow: inset 140px 0 0 0 transpar#888888ent;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 white;
     color: white;
     
 }
-/* .item_2-text a p{
-    padding: 0.75rem 0;
-    text-align: center;
-    background-color: white;
-    font-size: 14px;
+.title-1{
+    font-size: 25px;
+    color: white;
+}
 
-    width: 143px;
-    border: 1px solid rgba(170, 169, 169, 0.5);
-    color: #363636;
-    margin-top: 12px;
-} */
 .item_2-text{
     position: absolute;
     bottom: 50px;
@@ -185,17 +207,20 @@ p{
 }
 .item-4{
     overflow: hidden;
-    transition: 0.3s ease-in-out;
-    transform: scale(1);
+    transition: 0.5s ease-in-out;
+    /* transform: scale(1); */
 }
 .item_4-img{
     width: 100%;
     overflow: hidden;
-    /* transform: scale(1); */
+
 }
 .item_4-img img{
+   
     width: 100%;
+    height: 100%;
     /* overflow: hidden; */
+    display: block;
      
 }
 .container_section-5 > p{
@@ -205,7 +230,7 @@ p{
 
 }
 
-.item_4-img:hover{
+.item-4:hover img{
     transform: scale(1.2);
 }
 .connect{
@@ -219,7 +244,7 @@ p{
     transition: ease-out 0.5s;
     outline: none;
     cursor: pointer;
-    border-radius: 4px;
+    
     
 
 
@@ -228,6 +253,7 @@ p{
     box-shadow: inset 250px 0 0 0 white;
     color:#333;
 }
+
 .connect-5{
     width: 150px;
 
@@ -235,4 +261,3 @@ p{
 .item-4 h3:hover{
     color: #916841;
 }
-.

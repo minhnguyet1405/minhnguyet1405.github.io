@@ -1,0 +1,10 @@
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+.list_item{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; */
+    display: none;
+}
