@@ -6,13 +6,155 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha1012-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn10VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="(max-width:740px)" href="style_mobile.css">
     <!-- <link rel="stylesheet" media="(min-width:1024px)" href="style_mobile.css"> -->
     <link rel="stylesheet" media="(min-width:740px) and (max-width:1024px)" href="style_tab.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script>
+        function maill(){
+            var el = document.getElementById("mail").value;
+        var reg=/.+\@gmail\.com/;
+        if(el== ""){
+            document.getElementById("error1").innerText = 'Email không được để trống'
+        }else{
+            // document.getElementById("error1").innerText = ""
+            if(!reg.test(el)){
+                document.getElementById("error1").innerText = 'Email sai định dạng'
+            }else{
+                document.getElementById("error1").innerText = ""
+            }
+        }
+            }
+    </script>
 </head>
 
 <body>
+    <div class="container-header">
+        <div class="header">
+            <div class="left">
+                <h3>HOTLINE ĐẶT HÀNG: 1900 5123</h3>
+            </div>
+            <div class="mid">
+                <img src="https://scontent.fhan3-5.fna.fbcdn.net/v/t1.15752-9/263042622_419185426571783_412576475306021892_n.png?_nc_cat=110&ccb=1-5&_nc_sid=ae9488&_nc_ohc=b5pWznb6UAQAX-n8IIZ&_nc_ht=scontent.fhan3-5.fna&oh=03_AVIW0HCZcU55gdmkXxVHlklYsElDD-dsAtVg-mHp07Fx6g&oe=61E6A090" alt="">
+            </div>
+            <div class="buyer">
+                <ul class="buy">
+                    <li class="account">
+                        <div class="btn-group">
+                            <a href="#" title="Tài Khoản" rel="nofollow" class="acc">TÀI KHOẢN
+                            <div class="appear">
+                                <ul>
+                                    <li>
+                                        <a href="#" title="Đăng nhập" rel="nofollow">ĐĂNG NHẬP</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Đăng ký" rel="nofollow">ĐĂNG KÍ</a>
+                                    </li>
+                                </ul>
+                            </div>    
+                            </a>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="btn-group2">
+                            <a href="#" rel="nofollow" title="Giỏ hàng">GIỎ HÀNG
+                                <p class="appear2">Không có sản phẩm nào trong giỏ hàng</p>
+                                <i class="fas fa-cart-arrow-down"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" title="Tìm kiếm"><i class="fas fa-search"></i></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="header-nav">
+            <ul id="nav">
+                <li><a href="">Trang Chủ</a></li>
+                <li class="more">
+                    <a href="">Giới Thiệu
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="">Chính Sách Đổi Hàng</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Hướng Dẫn Thanh Toán</a></li>
+                        <li><a href="">Chính Sách Vận Chuyển</a></li>
+                        <li><a href="">Hệ Thống Cửa Hàng</a></li>
+                    </ul>
+                </li>
+                <li class="more" >
+                    <a href="">Nam
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="">Đồng hồ KASHMIR</a></li>
+                        <li><a href="">Đồng hồ WEIMAR</a></li>
+                        <li><a href="">Đồng hồ COLOSSEUM</a></li>
+                    </ul>
+                </li>
+                <li class="more">
+                    <a href="">Nữ
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="">Bán Chạy Nhất</a></li>
+                        <li><a href="">Đồng hồ MELISSANI</a></li>
+                        <li><a href="">Đồng hồ MORAINE</a></li>
+                    </ul>
+                </li>
+                <li class="more">
+                    <a href="">Phụ Kiện
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="">Dây đòng hồ</a></li>
+                        <li><a href="">Kính Râm</a></li>
+                        <li><a href="">Kính Mắt</a></li>
+                    </ul>
+                </li>
+                <li class="more1">
+                    <a href="">Sản Phẩm
+                        <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="subnav1">
+                        <div class="o1">
+                            <p>Nam</p>
+                            <li><a href="">Đồng hồ KASHMIR</a></li>
+                            <li><a href="">Đồng hồ WEIMAR</a></li>
+                            <li><a href="">Đồng hồ COLOSSEUM</a></li>
+                        </div>
+                        <div class="o2">
+                            <p>Nữ</p>
+                            <li><a href="">Bán Chạy Nhất</a></li>
+                            <li><a href="">Đồng hồ MELISSANI</a></li>
+                            <li><a href="">Đồng hồ MORAINE</a></li>
+                        </div>
+                        <div class="o3">
+                            <p>Phụ Kiện</p>
+                            <li><a href="">Dây đòng hồ</a></li>
+                            <li><a href="">Kính Râm</a></li>
+                            <li><a href="">Kính Mắt</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li><a href="">Tin Tức</a></li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="section-1">
         <img src="https://bizweb.dktcdn.net/100/355/487/themes/720328/assets/slider_1.jpg?1638604575393" alt="">
     </div>
@@ -291,27 +433,31 @@
             <p class="title">TIN TỨC <b>EVO WATCH</b></p>
             <div class="list_item-4">
                 <div class="item-4">
-                    
+                    <a href="">
                         <div class="item_4-img">
                             <img src="https://bizweb.dktcdn.net/thumb/large/100/355/487/articles/shop-dong-ho-seiko-chinh-hang-2-e1507789314715.jpg?v=1558147825737" alt="">
                         </div>
                         <h3>Mạnh Mẽ & Cuốn Hút với đồng hồ mặt rắn L'Duchen Silver Snake</h3>
                         <p>   Thương hiệu đồng hồ Thụy Sỹ L’Duchen đã mở rộng bộ sưu tập Art Collection của mình với mẫu đồng hồ mặt r...
                         </p>
+                    </a>
                     
                 </div>
                 <div class="item-4">
-                    
+                    <a href="">
+
                         <div class="item_4-img">
                             <img src="https://bizweb.dktcdn.net/thumb/large/100/355/487/articles/chronograph2048x2048.jpg?v=1558147748693" alt="">
                         </div>
                         <h3>Chuyên gia chia sẻ 4 cách phân biệt đồng hồ hàng hiệu thật và giả</h3>
                         <p> Việc sưu tầm và sở hữu những chiếc đồng hồ hàng hiệu xa xỉ luôn là một niềm đam mê của nhiều quý ông hiện ...
                         </p>
+                    </a>
                     
                 </div>
                 <div class="item-4">
-                    
+                    <a href="">
+
                         <div class="item_4-img">
                             <img src="https://bizweb.dktcdn.net/thumb/large/100/355/487/articles/ban-biet-gi-ve-dong-ho-chronograph-1552766551.jpg?v=1558147662573" alt="">
                         </div>
@@ -319,16 +465,19 @@
                         <p>1. Đồng hồ Jacques Lemans JL-1-1654  
                             Đứng đầu danh sách Top 3 đồng hồ 6 kim là mẫu đồng hồ Jacques Lema...
                         </p>
+                    </a>
                     
                 </div>
                 <div class="item-4">
-                    
+                    <a href="">
+
                         <div class="item_4-img">
                             <img src="https://bizweb.dktcdn.net/thumb/large/100/355/487/articles/4-ways-to-create-a-more-stable-healthy-work-environment.jpeg?v=1557757018863" alt="">
                         </div>
                         <h3>Tại sao bạn nên yêu công việc của mình?</h3>
                         <p> Bạn có yêu công việc của bạn không? Tôi chắc rằng sẽ có rất nhiều câu trả lời là không. Vậy, nếu bạn không...
                         </p>
+                    </a>
                     
                 </div>
             </div>
@@ -337,8 +486,85 @@
             </button>
         </div>
     </div>
+    <div class="footer">
+        <div class="footer-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3 footer-top-1">
+                        <img src="https://bizweb.dktcdn.net/100/355/487/themes/720328/assets/logo.png?1638604575393" alt="">
+                        <ul class="list-menu">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>70 Lu Gia, Ward 15, District 11, Ho Chi Minh City</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <a href="#">1900 6750</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="#">support@sapo.vn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 footer-top-2">
+                        <h3><strong>MUA HÀNG</strong></h3>
+                        <ul class="list-menu">
+                            <li><a href="nam.html">NAM</a></li>
+                            <li><a href="nu.html">NỮ</a></li>
+                            <li><a href="phukien.html">PHỤ KIỆN</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 footer-top-3">
+                        <h3><strong>DỊCH VỤ KHÁCH HÀNG</strong></h3>
+                        <ul class="list-menu">
+                            <li><a href="nam.html">NAM</a></li>
+                            <li><a href="nu.html">NỮ</a></li>
+                            <li><a href="phukien.html">PHỤ KIỆN</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 footer-top-4">
+                        <div class="footer-top-4-1">
+                            <h3><strong>ĐĂNG KÍ NHẬN TIN</strong></h3>
+                            <p>Nhận thông tin sản phẩm mới nhất, tin khuyến mãi và nhiều hơn nữa</p>
+                            <form action="">
+                                <input type="text" placeholder="Email của bạn" id="mail" onblur="maill()">
+            <p id="error1" style="color: red; font-size: 12px;"></p>
+                                <button type="submit">ĐĂNG KÍ</button>
+                            </form>
+                            <div class="footer-payment">
+                                <ul class="payment">
+                                    <li class="item"><img src="https://bizweb.dktcdn.net/100/355/487/themes/720328/assets/payment_1.svg?1638604575393" alt="Evo Watch"></li>
+                                    <li class="item"><img src="https://bizweb.dktcdn.net/100/355/487/themes/720328/assets/payment_2.svg?1638604575393" alt="Evo Watch"></li>
+                                    <li class="item"><img src="https://bizweb.dktcdn.net/100/355/487/themes/720328/assets/payment_3.svg?1638604575393" alt="Evo Watch"></li>
+                                    <li class="item"><img src="https://bizweb.dktcdn.net/100/355/487/themes/720328/assets/payment_4.svg?1638604575393" alt="Evo Watch"></li>
+                                    <li class="item"><img src="https://bizweb.dktcdn.net/100/355/487/themes/720328/assets/payment_5.svg?1638604575393" alt="Evo Watch"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="text-center">
+                    <span><b>@ Bản quyền thuộc về</b> Evo Themes <span><strong> | Cung cấp bởi </strong></span><a href="#"><b>Sapo</b></a></span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="back-top">
+                    <a href="#">
+                    <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
     
 </body>
     
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 </html>
