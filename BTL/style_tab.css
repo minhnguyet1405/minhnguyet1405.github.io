@@ -1,7 +1,25 @@
+
 .container{
     width: 95%;
     margin: 0 auto;
 }
 .list_item{
     display: none;
+}
+.account,.cart{
+    display: none;
+}
+#menu{
+    display: none;
+}
+.container_section-5{
+    width: 95%;
+}
+.item-4 h3{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.item-4 p{
+    font-size: 12px;
 }

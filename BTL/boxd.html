@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script>
+        function maill(){
+            var el = document.getElementById("mail").value;
+        var reg=/.+\@gmail\.com/;
+        if(el== ""){
+            document.getElementById("error1").innerText = 'Email không được để trống'
+        }else{
+            // document.getElementById("error1").innerText = ""
+            if(!reg.test(el)){
+                document.getElementById("error1").innerText = 'Email sai định dạng'
+            }else{
+                document.getElementById("error1").innerText = ""
+            }
+        }
+            }
+        
+            function click1(){
+            var nd = document.getElementById("noidung").value;
+            if(nd == ""){
+                document.getElementById("erro").innerText = 'Nội dung không được để trống'
+            }
+        }
+        function click2(){
+            var hoT = document.getElementById("ht").value
+            var regHoT = /[a-zA-Z]/
+            if(hoT == ""){
+                document.getElementById("err").innerText = 'Họ và tên không được để trống'
+            }else{
+                document.getElementById("err").innerText = ""
+                for(var i = 0; i < hoT.length; i++){
+                    if(!regHoT.test(hoT[i])){
+                        document.getElementById("err").innerText = 'Họ và tên chỉ gồm các chữ cái'
+                    }else{
+                        document.getElementById("err").innerText = ""
+                    }
+                }
+            }
+        }
+        function click3(){
+            var e = document.getElementById("em").value;
+            var reg=/.+\@gmail\.com/;
+            if(e== ""){
+                document.getElementById("er").innerText = 'Email không được để trống'
+            }else{
+                document.getElementById("error1").innerText = ""
+                if(!reg.test(e)){
+                    document.getElementById("er").innerText = 'Email sai định dạng'
+                }else{
+                    document.getElementById("er").innerText = ""
+                }
+            }
+        }
+    </script>
+    <style>
+        body{
+            font-family: sans-serif;
+            letter-spacing: 1px;
+            /* font-style: italic; */
+            font-weight: lighter;
+        }
+        
+        .box{
+            margin-top: 40px;
+            height: auto;
+            width: 1000px;
+            margin-left: 200px;
+        }
+        .box img{
+            margin-left: 170px;
+            width: 600px;
+            height: 400px;
+        }
+        ul{
+            list-style: none;
+        }
+.header{
+    border-bottom: 1px solid #f5f5f5;
+}
+.container-header{
+  width: 80%;
+  margin: 0 auto;
+}
+.top-header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f5f5f5;
+  height: 90px;
+  align-items: center;
+}
+.logo img{
+ height: 70px;
+}
+.connect-header{
+  display: flex;
+  gap: 1.5rem;
+}
+#menu{
+  padding: 0.5rem 0;
+}
+#menu li a{
+  text-decoration: none;
+  color: #1c1c1c;
+  font-weight: 540;
+  letter-spacing: 2px;
+  font-size: 14px;
+
+}
+.nav{
+  display: flex;
+  justify-content: space-around;
+
+}
+.nav li a{
+  display: block;
+  position: relative;
+}
+.submenu{
+  position: absolute;
+  background-color: white;
+  padding: 5px 0;
+  width: 250px;
+  top: 170%;
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-30%);
+  transition: all 0.5s ease-in-out;
+}
+.submenu a{
+  padding: 15px 8px;
+  border-bottom: 1px solid #f5f5f5;
+}
+.submenu li:last-child a{
+  border: none;
+  
+}
+
+.nav li:hover .submenu{
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
+  
+
+}
+.nav{
+  position: relative;
+}
+.box h3{
+  font-size: 16px;
+  font-weight: 550;
+}
+.submenu-1 a{
+  padding: 10px 8px;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sub{
+  position: absolute;
+  display: flex;
+  width: 100%;
+  top: 170%;
+  left: 0;
+  justify-content: space-between;
+  background-color: white;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  
+}
+
+.nav li:hover .sub{
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+/* footer */
+.footer {
+    margin-top: 50px;
+  }
+  
+  .footer .footer-top .container {
+    display: flex;
+    /* padding-bottom: 20px; */
+    margin: 0 !important;
+  }
+  .footer-top a {
+    text-decoration: none;
+    color: #1c1c1c;
+  }
+  .footer-top li {
+    list-style: none;
+    color: #1c1c1c;
+    margin-bottom: 7px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    word-break: break-word;
+  }
+  .footer-top .container-fluid {
+    width: 85%;
+  }
+  .footer-top h3 {
+    font-size: 12px;
+    letter-spacing: 1.4px;
+    line-height: 22px;
+    font-weight: 500;
+    margin-bottom: 15 px;
+  }
+ 
+  .footer-top-1 img {
+    margin-bottom: 15px;
+    align-self: center;
+    max-height: 60px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .list-menu {
+    margin-bottom: 15px;
+    line-height: 1.71429em;
+    list-style: none;
+    padding-left: 0;
+  }
+  .list-menu li {
+    color: #1c1c1c;
+    margin-bottom: 7px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    word-break: break-word;
+  }
+  
+  
+  .footer-top-4-1 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .footer-top-4 p {
+    letter-spacing: 0.5px;
+    font-size: 12px;
+  }
+  .footer-top-4 form {
+    margin-bottom: 15px;
+  }
+  .footer-top-4-1 input {
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    width: 100%;
+    outline: none;
+    padding: 0 10px;
+    background: #f0f0f0;
+    border: 1px solid transparent;
+    margin-bottom: 8px;
+  }
+  .footer-top-4 button {
+    width: 100%;
+    padding-bottom: 0;
+    padding-top: 0;
+    padding: 14px 28px;
+    border: 1px solid #1c1c1c;
+    font-size: 11px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    background-color: #1c1c1c;
+    color: #fff;
+  }
+  .payment {
+    text-align: center;
+    display: flex;
+    /* flex-wrap: wrap; */
+
+  }
+  .payment li {
+    margin-right: 10px;
+  }
+  .footer-bottom {
+    padding: 8px;
+    border-top: 1px solid #ebebeb;
+    font-size: 12px;
+    color: #1c1c1c;
+    font-weight: 500;
+  }
+  .text-center {
+    text-align: center;
+    padding: 8px;
+  }
+  .text-center a {
+    text-decoration: none;
+    color: #1c1c1c;
+  }
+  .back-top {
+    position: fixed;
+    right: 10px;
+    bottom: 60px;
+    /* z-index: 999; */
+    font-size: 12px;
+    /* height: 35px; */
+    top: auto;
+    opacity: 0.7;
+  }
+  .back-top a {
+    text-decoration: none;
+    color: #1c1c1c;
+  }
+  .mai p{
+            font-size: 12px;
+            color: red;
+        }
+        .a{
+            height: 150px;
+            width: 70vw;
+        }
+        .b{
+             height: 30px;
+             width: 30vw;
+        }
+        button{
+            border-radius: 4px;
+            background-color: black;
+            color: white;
+            height: 32px;
+            width: 200px;
+        }
+        .c{
+            margin-left: 760px;
+        }
+        @keyframes changcolor{
+            0% { top:0px;
+                left: 0px;
+                background-color: black;}
+            100%{ right: 0px;
+                top: 0px;
+                background-color:white}
+        }
+        .mai button:hover{
+            background-color: white;
+            color: black;
+            animation-name: changcolor; 
+            animation-duration : 1s;
+            animation-timing-function: ease-in;
+        }
+
+        .mai{
+          width: 80%;
+          margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container-header">
+            <div class="top-header">
+                <p>HOTLINE ĐẶT HÀNG: <b>1900 6750</b></p>
+                <div class="logo">
+                    <img src="https://bizweb.dktcdn.net/100/355/487/themes/720328/assets/logo.png?1638604575393" alt="">
+                </div>
+                <div class="connect-header">
+                    <div class="account">TÀI KHOẢN</div>
+                    <div class="cart">
+                        GIỎ HÀNG
+                        <i class="fas fa-cart-arrow-down"></i>
+                    </div>
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <div id="menu">
+                <ul class="nav">
+                    <li><a href="">TRANG CHỦ</a></li>
+                    <li>
+                        <a href="">GIỚI THIỆU<i class="fas fa-angle-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="index1.html">Chính sách đổi hàng</a></li>
+                            <li><a href="index2.html">FAQ</a></li>
+                            <li><a href="index3.html">Hướng dẫn thanh toán</a></li>
+                            <li><a href="index4.html">Chính sách vận chuyển</a></li>
+                            <li><a href="index5.html">Hệ thống cửa hàng</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">NAM<i class="fas fa-angle-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="nam1.html">Đồng hồ KASHMIR</a></li>
+                            <li><a href="nam2.html">Đồng hồ WEIMAR</a></li>
+                            <li><a href="nam3.html">Đồng hồ COLOSSEUM</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">NỮ<i class="fas fa-angle-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="nu1.html">Bán chạy nhất</a></li>
+                            <li><a href="nu2.html">Đồng hồ MELISSANI</a></li>
+                            <li><a href="nu3.html">Đồng hồ MORAINE</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">PHỤ KIỆN<i class="fas fa-angle-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="phukien1.html">Dây đồng hồ</a></li>
+                            <li><a href="pk2.html">Kính dâm</a></li>
+                            <li><a href="pk3.html">Kính mắt</a></li>
+                        </ul>
+                    </li>
+                    <li class="product">
+                        <a href="sanpham.html">SẢN PHẨM<i class="fas fa-angle-down"></i></a>
+                        <div class="sub">
+                            <div class="box">
+                                <h3>Nam</h3>
+                                <ul class="submenu-1">
+                                    <li><a href="nam1.html">Đồng hồ KASHMIR</a></li>
+                            <li><a href="nam2.html">Đồng hồ WEIMAR</a></li>
+                            <li><a href="nam3.html">Đồng hồ COLOSSEUM</a></li>
+                                </ul>
+                            </div>
+                            <div class="box">
+                                <h3>Nữ</h3>
+                                <ul class="submenu-1">
+                                    <li><a href="nu1.html">Bán chạy nhất</a></li>
+                            <li><a href="nu2.html">Đồng hồ MELISSANI</a></li>
+                            <li><a href="nu3.html">Đồng hồ MORAINE</a></li>
+                                </ul>
+                            </div>
+                            <div class="box">
+                                <h3>Phụ kiện</h3>
+                                <ul class="submenu-1">
+                                    <li><a href="phukien1.html">Dây đồng hồ</a></li>
+                            <li><a href="pk2.html">Kính dâm</a></li>
+                            <li><a href="pk3.html">Kính mắt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="m_boxd.html">TIN TỨC</a></li>
+                    <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="box">
+        <h2><center>MẠNH MẼ & CUỐN HÚT VỚI ĐỒNG HỒ MẶT RẮN L'DUCHEN SILVER SNAKE</center></h2>
+        <h3><center>ĐĂNG BỞI EVO THEMES VÀO LÚC 18/05/2019</center></h3>
+        <h3><i>Thương hiệu đồng hồ Thụy Sỹ L'Duchen đã mở rộng bộ sưu tập Art Collection của mình với mẫu đồng hồ mặt rắn-L'Duchen Silver snake mã hiệu D 161.11.23 dây da cao cấp phiên bản giới hạn.</i></h3>
+        <h3>L'Duchen Silver Snake - tuyên ngôn của vị thế và sức mạnh</h3>
+        <p>Nói đến loài vật mang ý nghĩa biểu trưng đa dạng không thể không nhắc tới loại rắn. Ứng với mỗi nền văn hóa ở mỗi quốc gia - vùng lãnh thổ, hình tượng rắn mang một ý nghĩa đặc trưng khác nhau. Tuy nhiên có một điểm chung phổ biến của loài rắn đó là biểu tượng của sức mạnh, trí tuệ minh mẫn và sức sống bất tử. Đây cũng là lí do Tổ chức Y tế thế giới WHO chọn rắn là hình rắn làm biểu tượng.</p>
+        <img src="https://erawatch.vn/wp-content/uploads/2018/05/1-1.jpg" width="602px" height="399px" alt="">
+        <br> <br>
+        <i>Hơn 300 năm qua, nhà L'Duchen chưa bao giờ khiến tín đồ thất vọng và sự ra đời của L’Duchen Silver Snake như tuyên ngôn về đẳng cấp hãng</i>
+        <p>
+        Đối với hãng thương hiệu đồng hồ Thụy Sỹ hơn 300 năm tuổi – L’duchen, biểu tượng của loài rắn được truyền cảm hứng sáng tạo cho đội ngũ thiết kế, nghệ nhân chế tác, để tạo mẫu đồng hồ L’Duchen Silver Snake mã hiệu D 161.11.23 như một biểu tượng cho đẳng cấp sang trọng, sự quyền quý. Đồng thời khẳng định vị thế, sức mạnh của chủ nhân.</p>
+        <h3>L'Duchen Silver Snake : Xứng tầm đẳng cấp</h3>
+        <p>Bộ máy trong đồng hồ, từng chi tiết nhỏ nhất trên mặt số hình rắn được lắp ráp và vẽ hoàn toàn thủ công bằng tay bởi nhóm thợ đồng hồ có kinh nghiệm, thực hiện tất cả các giai đoạn lắp ráp từ đầu đến cuối. Sự hoàn thiện đồng hồ vô cùng nổi bật với các viên đá quý được đặt khéo léo, các chi tiết uốn lượn trên mình rắn chính xác tuyệt đối, được đánh bóng cầu kỳ, phối màu độc đáo. Có thể nói rằng, L’Duchen Silver snake mã hiệu D 161.11.23 mang vẻ đẹp, mạnh mẽ, quyền quý của trang sức hình rắn đã ‘thôi miên’ không ít doanh nhân giàu có, thành đạt khắp 5 Châu.</p>
+        <img src="https://erawatch.vn/wp-content/uploads/2017/06/lduchen-d-161.11.23-silver-snake-7-e1499413606845.jpg" alt="">
+        <br> <br>
+        <i>Đồng hồ L’Duchen Silver Snake ngoài chất lượng cao còn mang tính biểu tượng cho trí tuệ, đẳng cấp</i>
+        <p>Tất cả những tính năng phức tạp  ẩn chứa trong bộ máy Quartz được đặt vỏn vẹn trong bộ vỏ có đường kính 41mm, dày khoảng 11mm. Một  kích thước trên giấy tờ vô cùng tuyệt vời với cổ tay nam giới Châu Á nói chung và Việt Nam nói riêng. Và cũng xin được nói thêm rằng, các thiết kế của hãng L’duchen chưa bao giờ thôi nổi tiếng với thiết kế thanh mảnh và lịch lãm, tất nhiên với mẫu đồng hồ này cũng tương tự. <br> <br>
+
+        Đúng với ý tưởng hình rắn độc đáo, thiết kế đồng hồ cũng rất chắc chắn và mạnh mẽ, uy quyền. Càng nối dây cũng được thiết kế vát, hơi cong theo dáng cổ tay. Đi kèm với chiếc đồng hồ là bộ dây da cá sấu đen và khóa bướm chế tác bằng thép không gỉ cao cấp, cùng chất liệu với bộ vỏ. Nhiều người đánh giá cao chất liệu chế tác quý hiếm dùng trong chế tác bộ vỏ, dây đeo, núm vặn mặc dù được hoàn thiện tỉ mỉ, nhưng thứ làm nên sự cuốn hút của chiếc đồng hồ này chính là mặt số quá độc đáo, thật xự xuất sắc cùng những chức năng phức tạp được hiển thị bên trong.</p>
+        <img src="https://erawatch.vn/wp-content/uploads/2017/06/lduchen-d-161.11.23-silver-snake-8-e1499413618732.jpg" alt="">
+        <br> <br>
+        <i>Có thể bạn không biết, L’Duchen Silver Snake được các doanh nhân thành đạt yêu thích</i>
+        <p>Do mặt số độc đáo, nổi bật thầm nhuần tinh thần sáng tạo và sở hữu phong cách tối giản: Chỉ phô bày 3 cây kim thiết kế nhọn hình cung tên giúp người dùng có thể dễ dàng quan sát chi tiết hình rắn. Toàn bộ kim chỉ giờ, chỉ phút và chỉ giây, đinh ốc và toàn bộ chi tiết trên mặt số đều được hoàn thiện với phương pháp thủ công. Nhờ đó, cho ra một màu khối màu hài hòa vừa cổ điển vừa hiện đại, thực sự bắt mắt.</p>
+    </div>
+    <div class="mai">
+      <h3>VIẾT BÌNH LUẬN CỦA BẠN</h3>
+      <i>Địa chỉ email của bạn sẽ được bảo mật. Các trường hợp bắt buộc được đánh dấu <span style="color: red;">*</span></i> <br><br>
+      <b>Nội dung<span style="color: red;">*</span></b> <br><br>
+      <input type="text" placeholder="Nội dung" id="noidung" onblur="click1()" class="a">
+      <p id="erro"></p>
+      <b>Họ tên<span style="color: red;">*</span></b> <br>
+      <input type="text" placeholder="Họ tên"
+      onblur="click2()" id="ht" class="b">
+      <p id="err"></p>
+      <b>Email<span style="color: red;">*</span></b> <br>
+      <input type="text" placeholder="Email" id="em" onblur="click3()" class="b">
+      <p id="er"></p>
+      <a href="" class="c"><button>GỬI BÌNH LUẬN</button></a>
+  </div>
+    <div class="footer">
+        <div class="footer-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-3 footer-top-1">
+                        <img src="https://bizweb.dktcdn.net/100/355/487/themes/720328/assets/logo.png?1638604575393" alt="">
+                        <ul class="list-menu">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>70 Lu Gia, Ward 15, District 11, Ho Chi Minh City</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone-alt"></i>
+                                <a href="#">1900 6750</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="#">support@sapo.vn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 footer-top-2">
+                        <h3><strong>MUA HÀNG</strong></h3>
+                        <ul class="list-menu">
+                            <li><a href="nam.html">NAM</a></li>
+                            <li><a href="nu.html">NỮ</a></li>
+                            <li><a href="phukien.html">PHỤ KIỆN</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 footer-top-3">
+                        <h3><strong>DỊCH VỤ KHÁCH HÀNG</strong></h3>
+                        <ul class="list-menu">
+                            <li><a href="nam.html">NAM</a></li>
+                            <li><a href="nu.html">NỮ</a></li>
+                            <li><a href="phukien.html">PHỤ KIỆN</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-3 footer-top-4">
+                        <div class="footer-top-4-1">
+                            <h3><strong>ĐĂNG KÍ NHẬN TIN</strong></h3>
+                            <p>Nhận thông tin sản phẩm mới nhất, tin khuyến mãi và nhiều hơn nữa</p>
+                            <form action="">
+                                <input type="text" placeholder="Email của bạn" id="mail" onblur="maill()">
+            <p id="error1" style="color: red; font-size: 12px;"></p>
+                                <button type="submit">ĐĂNG KÍ</button>
+                            </form>
+                            <div class="footer-payment">
+                                <ul class="payment">
+                                    <li class="item"><img src="https://bizweb.dktcdn.net/100/355/487/themes/720328/assets/payment_1.svg?1638604575393" alt="Evo Watch"></li>
+                                    <li class="item"><img src="https://bizweb.dktcdn.net/100/355/487/themes/720328/assets/payment_2.svg?1638604575393" alt="Evo Watch"></li>
+                                    <li class="item"><img src="https://bizweb.dktcdn.net/100/355/487/themes/720328/assets/payment_3.svg?1638604575393" alt="Evo Watch"></li>
+                                    <li class="item"><img src="https://bizweb.dktcdn.net/100/355/487/themes/720328/assets/payment_4.svg?1638604575393" alt="Evo Watch"></li>
+                                    <li class="item"><img src="https://bizweb.dktcdn.net/100/355/487/themes/720328/assets/payment_5.svg?1638604575393" alt="Evo Watch"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="text-center">
+                    <span><b>@ Bản quyền thuộc về</b> Evo Themes <span><strong> | Cung cấp bởi </strong></span><a href="#"><b>Sapo</b></a></span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="back-top">
+                    <a href="#">
+                    <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</html>
