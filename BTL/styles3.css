@@ -1,4 +1,5 @@
 @import url(base.css);
+@import url(basehead.css);
 .container-tutorial{
     width: 80%;
     margin: 0 auto;
